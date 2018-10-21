@@ -1,0 +1,16 @@
+{
+  "name": "booklistproject",
+  "version": "1.0.0",
+  "description": "A simple ES6 classes implementation mini app for creating a list of book.",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://vasu001.github.io/booklist",
+  "dependencies": {
+    "gh-pages": "^2.0.1"
+  }
+}

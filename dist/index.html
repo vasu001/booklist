@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <title>Book List App Using ES6 Classes</title>
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <div class="display-4 container text-center mb-5 card card-header bg-warning text-white">Book List App</div>
+        <div class="row">
+            <div class="col-lg-4 mx-auto mt-5">
+                <div class="card card-body bg-light">
+                    <form id="create-book">
+                        <div class="form-group text-center">
+                            <label for="id" class="h4">ID</label>
+                            <input type="text" name="id" id="id" class="form-control form-control-lg" placeholder="ID">
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="title" class="h4">Title</label>
+                            <input type="text" name="title" id="title" class="form-control form-control-lg" placeholder="Title">
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="author" class="h4">Author</label>
+                            <input type="text" name="author" id="author" class="form-control form-control-lg"
+                                placeholder="Author">
+                        </div>
+                        <div class="form-group text-center">
+                            <label for="isbn" class="h4">ISBN</label>
+                            <input type="text" name="isbn" id="isbn" class="form-control form-control-lg" placeholder="ISBN">
+                        </div>
+                        <div class="form-group">
+                            <input type="submit" value="Add Book" class="btn btn-block btn-outline-success">
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4 mx-auto text-center mt-5">
+                <table class="table">
+                    <div class="head">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th>ID</th>
+                                <th>Title</th>
+                                <th>Author</th>
+                                <th>ISBN</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tr">
+                        </tbody>
+                    </div>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <div class="showAlert text-center">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
